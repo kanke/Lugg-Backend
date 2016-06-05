@@ -1,0 +1,29 @@
+curl --data "id=mylugg&customer=yacine&pickup=Heathrow&dropoff=OldStreet" https://localhost:8080/lugg/dropoff
+
+
+http://localhost:8080/lugg/checkin?id=mylugg&customer=yacine&pickup=heathrow&dropoff=Old%20Street
+
+
+java -jar target/lugg_srv-0.1.0.jar
+
+
+curl --data "{\"id\":\"yacine\", \"customer\":\"yacine\", \"pickup\":\"yacine\", \"dropoff\":\"yacine\"}" -v -X POST -H "Content-Type: application/json" http://localhost:8080/lugg/dropoff
+
+
+
+<repositories>
+        <repository>
+            <id>spring-releases</id>
+            <url>https://repo.spring.io/libs-release</url>
+        </repository>
+    </repositories>
+    <pluginRepositories>
+        <pluginRepository>
+            <id>spring-releases</id>
+            <url>https://repo.spring.io/libs-release</url>
+        </pluginRepository>
+    </pluginRepositories>
+
+https://api.tfl.gov.uk/Journey/JourneyResults/Heathrow Airport, Heathrow Airport/to/Old Street, City of London?nationalSearch=False&timeIs=Departing&journeyPreference=LeastTime&walkingSpeed=Average&cyclePreference=None&alternativeCycle=False&alternativeWalking=True&applyHtmlMarkup=False&useMultiModalCall=False&walkingOptimization=False&app_id=21453e90&app_key=dce0956f81edf2de0d370161e12bb007
+
+https://api.tfl.gov.uk/Journey/JourneyResults/Heathrow%20Airport,%20Heathrow%20Airport/to/Old%20Street,%20City%20of%20London?nationalSearch=False&timeIs=Departing&journeyPreference=LeastTime&walkingSpeed=Average&cyclePreference=None&alternativeCycle=False&alternativeWalking=True&applyHtmlMarkup=False&useMultiModalCall=False&walkingOptimization=False&app_id=21453e90&app_key=dce0956f81edf2de0d370161e12bb007
